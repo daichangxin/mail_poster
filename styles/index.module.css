@@ -1,0 +1,10 @@
+.indexRoot {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnGroup {
+    position: relative;
+    display: flex;
+    flex-flow: row-reverse;
+}

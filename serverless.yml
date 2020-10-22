@@ -1,0 +1,18 @@
+# serverless.yml
+component: nextjs # (必填) 组件名称，此处为nextjs
+name: mail-poster # (必填) 实例名称
+app: mailPoster # (可选) 该 next.js 应用名称
+stage: dev # (可选) 用于区分环境信息，默认值是 dev
+
+inputs:
+  src:
+    src: ./
+    exclude:
+      - .env
+  functionName: nextjsDemo
+  region: ap-guangzhou
+  runtime: Nodejs10.15
+  apigatewayConf:
+    protocols:
+      - https
+    environment: release
